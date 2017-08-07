@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WJStandard_Category_Example' do
+  pod 'WJStandard_Category', :path => '../'
+
+  target 'WJStandard_Category_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
